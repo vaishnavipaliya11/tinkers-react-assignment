@@ -22,7 +22,7 @@ export const Pokemon = () => {
   }, []);
 
   const handelPage = async () => {
-    if (pageNo == 3) {
+    if (pageNo == 4) {
       setPageNo(1);
     }
     try {
@@ -44,10 +44,11 @@ export const Pokemon = () => {
           return <PokemonCard data={data} />;
         })}
         {loading ? <p>loading...</p> : ""}
-       
       </div>
-      
-      <button className="page-no-btn" onClick={handelPage}>Page No {pageNo}</button>
+
+      <button className="page-no-btn" onClick={handelPage}>
+        Page No {pageNo}
+      </button>
     </div>
   );
 };

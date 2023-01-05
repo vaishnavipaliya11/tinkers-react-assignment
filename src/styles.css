@@ -27,3 +27,20 @@
     background-color: var(--primary-clr);
     color: whitesmoke;
 }
+
+.navbar-container{
+    padding: 0.2rem;
+    /* background-color: var(--primary-clr); */
+    color: whitesmoke;
+    position: fixed;
+    width: 100%;
+    margin: 0;
+    top: 0;
+    margin-bottom: 2rem;
+}
+.margin-lrg{
+    margin-top: 2rem;
+}
+.home-container{
+    display: flex;
+}
