@@ -1,0 +1,10 @@
+.common-flex {
+  display: flex;
+}
+.common-flex-col {
+  display: flex;
+  flex-direction: column;
+}
+.align-center {
+  align-items: center;
+}
