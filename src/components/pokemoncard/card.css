@@ -8,3 +8,26 @@
 .align-center {
   align-items: center;
 }
+.fs-sm{
+  font-size: 0.8rem;
+}
+.space-bet{
+  justify-content: space-between;
+}
+.card-content{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.margin-sm{
+  margin: 0;
+}
+.attack-name{
+  font-size: 0.8rem;
+}
+.margin-med{
+  margin: 1rem;
+}
+.card-container{
+  max-width: 10rem;
+}

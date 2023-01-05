@@ -1,3 +1,6 @@
+:root{
+    --primary-clr:#14b8a6;
+}
 .common-flex{
     display: flex;
 }
@@ -7,4 +10,20 @@
 }
 .mapped-container{
     flex-wrap: wrap;
+}
+.margin-med{
+    margin: 1rem;
+}
+.page-no-btn{
+    margin: 0.5rem;
+    padding: 0.5rem;
+    background-color:whitesmoke ;
+    color:var(--primary-clr) ;
+    border: 1px solid var(--primary-clr);
+    border-radius: 5px;
+}
+.page-no-btn:hover{
+    cursor: pointer;
+    background-color: var(--primary-clr);
+    color: whitesmoke;
 }

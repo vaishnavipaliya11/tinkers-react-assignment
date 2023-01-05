@@ -5,29 +5,31 @@ import CardMedia from "@mui/material/CardMedia";
 import CardContent from "@mui/material/CardContent";
 import CardActions from "@mui/material/CardActions";
 
-import Typography from "@mui/material/Typography";
 export const PokemonCard = ({ data }) => {
-  console.log(data, "PokemonCard");
+
   const { images, attacks, artist, hp } = data;
   return (
-    <Card sx={{ maxWidth: 200 }}>
+    <Card className="margin-med card-container">
       <CardMedia
         component="img"
-        height="194"
+        className="card-img"
         image={images.small}
-        alt="Paella dish"
+        alt={images?.small}
       />
-      <CardContent>
-        <div className="common-flex align-center">
-          <h4>{artist}</h4>
-          <h4>Hp: {hp}</h4>
+      <CardContent >
+        <div className="card-content">
+        <div className="common-flex space-bet fs-sm">
+          <p>{artist}</p>
+          <p>Hp: {hp}</p>
         </div>
 
-        <h3>Attacks</h3>
+        <h5>Attacks</h5>
         {attacks.map((data) => {
-          return <p>{data.name}</p>;
+          return <p className="margin-sm attack-name">{data.name}</p>;
         })}
-        <p>{attacks[0].name}</p>
+        
+        </div>
+        
       </CardContent>
       <CardActions disableSpacing></CardActions>
     </Card>
